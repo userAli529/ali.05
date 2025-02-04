@@ -141,7 +141,6 @@ class App extends React.Component {
     if(!isInArray) {
       const updatedOrders = [...this.state.osders, item];
       this.setState({osders: updatedOrders}, () => {
-        // Update localStorage after adding new item
         localStorage.setItem('orders', JSON.stringify(updatedOrders));
       });
     } else {
@@ -152,7 +151,6 @@ class App extends React.Component {
         return el;
       });
       this.setState({osders: updatedOrders}, () => {
-        // Update localStorage after updating quantity
         localStorage.setItem('orders', JSON.stringify(updatedOrders));
       });
     }

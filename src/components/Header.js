@@ -42,11 +42,18 @@ export default function Header(props) {
           <p className='total-price'>
             {summa}сом {props.osders.length} товаров
             {new Intl.NumberFormat().format}
-            <a href="https://whatsapp.com/channel/0029Vb3rD8l9MF92H3Otry04">
+            <a href="https://wa.me/996507666438">
               <button className='order-button'>Оформить заказ</button>
+            
+
             </a>
+            <input type="text" placeholder='имя' />
+            <input type="text" placeholder='Адрес' />
           </p>
+
+
         </div>
+
       )}
    </div>
    <div className='presentation'></div>

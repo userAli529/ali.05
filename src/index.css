@@ -135,7 +135,7 @@ header .presentation {
 }
 
 header .presentation::before {
-    content: "Лучшее одежды для тебя";
+    content: "Лучшее одежды для тебя🎁ЕСПЛАТНАЯ ДОСТАВКА по Бишкеку";
     position: absolute;
     top: 50px;
     left: 20px;
@@ -531,4 +531,29 @@ footer {
   padding: 10px;
   background-color: white;
   color: #333;
+}
+
+
+/* Стили для input полей */
+input[type="text"] {
+    width: 90%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #ff0000;
+}
+
+input[type="text"]:focus {
+    border-color: #dc1308;
+    box-shadow: 0 0 5px rgba(220, 19, 8, 0.2);
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+    font-size: 14px;
 }
